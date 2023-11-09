@@ -1,21 +1,13 @@
-# Analysis 3
+# A Tutorial on Fitting and Comparing ACT-R Models Using Maximum Likelihood
 
-This is the complete analysis of Cher's [project](https://www.biorxiv.org/content/10.1101/2023.01.10.523458v1.abstract), but extended to all the trials in the dataset and  using a Python reimplementation of the Declarative and Procedural subsystems in ACT-R.
+ACT-R is an integrated framework that is widely used in cognitive psychology and cognitive neuroscience. It is one of the most popular and widely used cognitive architectures (Kotseruba and Tsotsos 2020), the most popular in the psychological sciences, and of the most popular modeling frameworks in the field, with approximately 1,000 scientific publications to its name.
 
-## Results
+As part of the work, ACT-R researchers often perform operations of model-fitting, attempting to fit the model parameters against some group-level (or, more rarely, individual-level) behavioral index. At the time of writing, the most common measures used to fit these models are Spearman correlations and RMSE. In cases in which two or more models are comparatively evaluated, the same measures are used to decide which model is the best. This approach is potentially misleading.
 
-In the new analysis, individuals best-fit by the Declarative model show significant behavioral differences when compared to individuals best-fit by the Procedural model. 
+This repository offers a tutorial on how to fit, evaluate, and compare ACT-R models on the basis of their _likelihood_. The likelihood of a model _m_ with a given set of parameter values _θ_, given the data __x__, is formally defined as 
 
-In the model assignment procedure, both model recovery and parameter recovery are highly reliable:
+$$L(m, θ | xo) = P(x = xo | m, θ)$$
 
-Here is the confusion matix for model recovery:
+The meaning of Equation 1 is appealingly intuitive: a model is more “likely” when it has a greater probability of producing the observed data.
 
-![Model Recovery](model-recovery.png)
-
-And the correlation values for parameter recovery:
-
-![Parameter Recovery](parameter-recovery.png)
- 
-
-
-
+As the next sections will show, there are motivated reasons why ACT-R researchers have not historically relied on likelihood. We argue, however, that this is a limitation, and that likelihood can and should be used more broadly. The accompanying Jupyter Python notebook provides step-by-step instructions and Python code examples; the code contains all of the data and code to generate the examples and figures in the accompanying paper.
