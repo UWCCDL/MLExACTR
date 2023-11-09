@@ -6,8 +6,10 @@ As part of the work, ACT-R researchers often perform operations of model-fitting
 
 This repository offers a tutorial on how to fit, evaluate, and compare ACT-R models on the basis of their _likelihood_. The likelihood of a model _m_ with a given set of parameter values _θ_, given the data __x__, is formally defined as 
 
-$$L(m, θ | xo) = P(x = xo | m, θ)$$
+$$L(m, θ | x_o) = P(x = x_o | m, θ)$$
 
 The meaning of Equation 1 is appealingly intuitive: a model is more “likely” when it has a greater probability of producing the observed data.
 
-As the next sections will show, there are motivated reasons why ACT-R researchers have not historically relied on likelihood. We argue, however, that this is a limitation, and that likelihood can and should be used more broadly. The accompanying Jupyter Python notebook provides step-by-step instructions and Python code examples; the code contains all of the data and code to generate the examples and figures in the accompanying paper.
+![Visual Interpretation of Likelihood](figures_publications/figure1.png)
+
+There are good reasons why ACT-R researchers have not historically relied on likelihood. We argue, however, that this is a limitation, and that likelihood can and should be used more broadly. The accompanying Jupyter Python notebook provides step-by-step instructions and Python code examples; the code contains all of the data and code to generate the examples and figures in the accompanying paper.
