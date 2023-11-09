@@ -10,6 +10,6 @@ $$L(m, θ | x_o) = P(x = x_o | m, θ)$$
 
 The meaning of Equation 1 is appealingly intuitive: a model is more “likely” when it has a greater probability of producing the observed data.
 
-![Visual Interpretation of Likelihood](figures_publication/figure1.png)
+![Visual Interpretation of Likelihood](figures_publication/figure02.png)
 
 There are good reasons why ACT-R researchers have not historically relied on likelihood. We argue, however, that this is a limitation, and that likelihood can and should be used more broadly. The accompanying Jupyter Python notebook provides step-by-step instructions and Python code examples; the code contains all of the data and code to generate the examples and figures in the accompanying paper.
